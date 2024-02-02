@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="num 1:"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:id="@+id/lblnum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnum1"
+        android:text="num 2:"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        />
+    <EditText
+        android:id="@+id/txtnum1"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblnum1"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="80dp"
+        />
+    <EditText
+        android:id="@+id/txtnum2"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnum1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        />
+    <Spinner
+        android:id="@+id/spnOpciones"
+        android:entries="@array/spnopciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/lblnum2"
+        />
+    <Button
+        android:id="@+id/btncalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="calcular"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/spnOpciones"
+        />
+    <TextView
+        android:id="@+id/lblrespuesta"
+        android:layout_below="@id/btncalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="respuesta: ?"
+        />
+
+
+</RelativeLayout>
